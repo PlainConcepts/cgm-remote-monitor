@@ -78,7 +78,6 @@
     "simple-statistics": "~0.7.0"
   },
   "devDependencies": {
-    "benv": "^1.1.0",
     "gulp": "^3.9.0",
     "gulp-bower": "0.0.10",
     "gulp-zip": "^3.0.2",
