@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var bower = require('gulp-bower');
 var path = require('path');
 var zip = require('gulp-zip');
 var minimist = require('minimist');
@@ -7,7 +8,7 @@ var fs = require('fs');
 var knownOptions = {
     string: 'packageName',
     string: 'packagePath',
-    default: {packageName: "Package.zip", packagePath: path.join(__dirname, '_package')}
+    default: {packageName: "package.zip", packagePath: path.join(__dirname, '_package')}
 };
 
 var options = minimist(process.argv.slice(2), knownOptions);
@@ -35,4 +36,11 @@ gulp.task('zip', function () {
     return gulp.src(packagePaths)
         .pipe(zip(options.packageName))
         .pipe(gulp.dest(options.packagePath));
+});
+
+
+
+
+gulp.task('bower', function() {
+    return bower();
 });
