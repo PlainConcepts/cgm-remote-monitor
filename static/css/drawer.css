@@ -7,11 +7,9 @@
 }
 
 #drawer .navigation {
-    padding: 8px 20px;
+    padding: 10px 20px;
     border-bottom: 1px solid #F0F0F0;
 }
-
-
 
 #drawer i, #treatmentDrawer i {
     opacity: 0.6;
@@ -26,7 +24,7 @@ input[type=number]:invalid {
 }
 
 #drawer .actions {
-    padding: 10px 20px 0;
+    padding: 10px 20px 20px;
     text-align: right;
 }
 
@@ -103,15 +101,14 @@ input[type=number]:invalid {
 }
 
 #about {
-    margin-top: 0!important;
+    margin-top: 0 !important;
     background: #F6F6F6;
     padding: 0 20px 20px;
 
 }
 
-#about legend {
+#about h3 {
     color: #00d7cc;
-    padding-top: 70px;
 }
 
 #about a {
@@ -127,11 +124,6 @@ input[type=number]:invalid {
     border-bottom: 1px solid currentColor;
     font-size: 12px;
     text-align: right;
-    transition: color .2s;
-}
-
-#useDefaults:hover {
-    color: #00b0a7;
 }
 
 form {
@@ -145,7 +137,7 @@ form {
 
 fieldset {
     margin: 20px 0 0;
-    padding: 20px;
+    padding: 20px 20px 0;
     border: none;
 }
 
@@ -176,10 +168,11 @@ dd.numbers label {
     width: 50px;
 }
 
-h1, legend,
+h1, h2, h3, legend,
 #toolbar .customTitle,
 #about .appName,
 #about .version {
+    font-weight: 400;
     color: #1D1E2A;
     text-transform: uppercase;
     font-size: 18px;
@@ -187,11 +180,18 @@ h1, legend,
 
 #about .appName {
     font-size: 1em;
+    font-weight: 500;
+    margin-bottom: 10px;
 }
 
 #about .version {
     font-size: 1.25em;
     margin-left: 0.25em;
+}
+#about a {
+    display: inline-block;
+    border-bottom: 1px solid currentColor;
+    margin-bottom: 3px;
 }
 
 #notification {
