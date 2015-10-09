@@ -244,15 +244,15 @@ body {
 }
 
 #container.announcing .customTitle {
-    color: orange;
+    color: #FFF;
 }
 
 #container.alarming.urgent .customTitle {
-    color: red;
+    color: #FFF;
 }
 
 #container.alarming.warning .customTitle {
-    color: yellow;
+    color: #FFF;
 }
 
 .bgStatus {
@@ -261,15 +261,15 @@ body {
 }
 
 .urgent .bgButton {
-    color: red;
+    color: #FFF;
 }
 
 .warning .bgButton {
-    color: yellow;
+    color: #FFF;
 }
 
 .inrange .bgButton {
-    color: #4cff00;
+    color: #FFF;
 }
 
 .bgStatus .currentBG {
@@ -418,7 +418,7 @@ body {
 }
 
 .alarming.warning .bgButton {
-    background-color: #ffe321;
+    background-color: #F6F616;
 }
 
 .button {
