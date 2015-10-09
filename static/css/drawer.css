@@ -1,37 +1,24 @@
-#drawer button, #treatmentDrawer button {
-    font-size: 18px;
-    font-weight: bolder;
-    background-color: #ccc;
-    padding: 5px 10px;
-    border-radius: 5px;
-    border: 2px solid #aaa;
-    box-shadow: 2px 2px 0 #eee;
-    width: 100%;
+
+.menu-btn {
+    color: #FFF;
+    background: #00D7CC;
+    display: inline-block;
+    text-transform: uppercase;
 }
 
-#drawer {
-    background-color: #666;
-    border-left: 1px solid #999;
-    box-shadow: inset 4px 4px 5px 0 rgba(50, 50, 50, 0.75);
-    color: #eee;
-    display: none;
-    font-size: 16px;
-    height: 100%;
-    overflow-y: auto;
-    position: absolute;
-    margin-top: 45px;
-    right: -200px;
-    width: 300px;
-    top: 0;
-    z-index: 1;
+#drawer .navigation {
+    padding: 8px 20px;
+    border-bottom: 1px solid #F0F0F0;
 }
+
+
 
 #drawer i, #treatmentDrawer i {
     opacity: 0.6;
 }
 
 #drawer a, #treatmentDrawer a {
-    color: white;
+    text-decoration: none;
 }
 
 input[type=number]:invalid {
@@ -39,30 +26,8 @@ input[type=number]:invalid {
 }
 
 #drawer .actions {
-    margin: 10px 2px;
-}
-
-#drawer .actions a {
-    display: block;
+    padding: 10px 20px 0;
     text-align: right;
-    padding: 10px 0;
-}
-
-#treatmentDrawer {
-    background-color: #666;
-    border-left: 1px solid #999;
-    box-shadow: inset 4px 4px 5px 0 rgba(50, 50, 50, 0.75);
-    color: #eee;
-    display: none;
-    font-size: 16px;
-    height: 100%;
-    overflow-y: auto;
-    position: absolute;
-    margin-top: 45px;
-    right: -200px;
-    width: 300px;
-    top: 0;
-    z-index: 1;
 }
 
 #treatmentDrawer input {
@@ -138,24 +103,40 @@ input[type=number]:invalid {
 }
 
 #about {
-    margin-bottom: 55px;
+    margin-top: 0!important;
+    background: #F6F6F6;
+    padding: 0 20px 20px;
+
+}
+
+#about legend {
+    color: #00d7cc;
+    padding-top: 70px;
+}
+
+#about a {
+    color: #00D7CC;
 }
 
 #about div {
     font-size: 12px;
 }
 
-#about .links {
-    margin: 10px;
+#useDefaults {
+    color: #00D7CC;
+    border-bottom: 1px solid currentColor;
+    font-size: 12px;
+    text-align: right;
+    transition: color .2s;
 }
 
-#about a {
-    color: #fff;
+#useDefaults:hover {
+    color: #00b0a7;
 }
 
 form {
     margin: 0;
-    padding: 0 10px;
+    padding: 0;
 }
 
 .serverSettings {
@@ -163,7 +144,9 @@ form {
 }
 
 fieldset {
-    margin: 0.5em 0 1em 0;
+    margin: 20px 0 0;
+    padding: 20px;
+    border: none;
 }
 
 legend {
@@ -197,8 +180,9 @@ h1, legend,
 #toolbar .customTitle,
 #about .appName,
 #about .version {
-    font-weight: bold;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    color: #1D1E2A;
+    text-transform: uppercase;
+    font-size: 18px;
 }
 
 #about .appName {
@@ -208,41 +192,6 @@ h1, legend,
 #about .version {
     font-size: 1.25em;
     margin-left: 0.25em;
-}
-
-#toolbar {
-    background: #00D7CC;
-    height: 72px;
-    line-height: 72px;
-    padding: 0 30px;
-}
-
-#buttonbar {
-    padding-right: 10px;
-    height: 44px;
-    opacity: 0.75;
-    vertical-align: middle;
-    position: absolute;
-    right: 0;
-    z-index: 500;
-}
-
-#buttonbar a,
-#buttonbar i {
-    color: #ccc;
-    font-size: 16px;
-    height: 44px;
-    line-height: 44px;
-}
-
-#buttonbar a {
-    float: left;
-    text-decoration: none;
-    width: 34px;
-}
-
-#buttonbar i {
-    padding-left: 12px;
 }
 
 #notification {
@@ -308,23 +257,28 @@ h1, legend,
 }
 
 ul.navigation {
-    padding: 0;
+    padding: 10px 0;
     margin: 0;
 }
 
 .navigation li {
     list-style: none;
-    display: block;
+    display: inline-block;
 }
 
-.navigation a {
+.menu-btn {
+    cursor: pointer;
+    border: none;
+    line-height: 22px;
+    width: 100%;
     text-decoration: none;
-    background-color: #808080;
-    display: block;
-    padding: 5px;
+    background-color: #00D7CC;
+    display: inline-block;
+    padding: 5px 8px;
     margin: 10px 0;
+    transition: background-color .2s;
 }
 
-.navigation a:hover {
-    background-color: #989898;
+.menu-btn:hover {
+    background-color: #00B0A7;
 }

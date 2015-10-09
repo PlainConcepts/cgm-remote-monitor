@@ -5,6 +5,7 @@
   position: absolute;
   visibility: hidden;
   right: 8px;
+  margin-top: 7px;
 }
 
 .dropdown-menu li {

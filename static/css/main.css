@@ -1,4 +1,16 @@
+/* FONTS */
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300);
+
+/* BASE */
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
 
 html,
 body {
@@ -10,7 +22,214 @@ body {
 body {
     font-family: 'Roboto', sans-serif;
     background: #F0F0F0;
+    overflow: hidden;
 }
+
+/* HEADER */
+#toolbar {
+    background: #00D7CC;
+    height: 72px;
+    line-height: 72px;
+    padding: 0 30px;
+}
+
+#currentTime {
+    float: left;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 38px;
+    color: #FFF;
+    text-transform: uppercase;
+}
+
+#buttonbar {
+    float: right;
+    display: inline-block;
+    padding-top: 6px;
+    height: 100%;
+}
+
+#buttonbar > a + a {
+    margin-left: 30px;
+}
+
+#drawerToggle {
+    position: relative;
+    z-index: 2;
+}
+
+/* MENU */
+.menu {
+    position: absolute;
+    height: 100%;
+    width: 320px;
+    top: 0;
+    right: -3px;
+    z-index: 1;
+    overflow-y: auto;
+    background-color: #FFFFFF;
+    font-size: 16px;
+    box-shadow: -1px 0 8px 0 rgba(0, 0, 0, .3);
+    transform: translateX(100%);
+    transition: transform .2s ease-in;
+}
+
+.menu.opened {
+    transform: translateX(0);
+}
+
+.menu dt{
+    color: #1D1E2A;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+/* PRIMARY */
+
+.primary {
+    overflow: hidden;
+    padding: 25px 30px 15px 40px;
+}
+
+#lastEntry {
+    display: inline-block;
+    padding: 15px 10px;
+    background: #FF1770;
+    border: 2px solid #FFF;
+    color: #FFF;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+#lastEntry em {
+    font-style: normal;
+}
+
+.bgButton {
+    background: #00D7CC;
+    display: inline-block;
+    border: 2px solid #FFF;
+    color: #FFF;
+    padding: 0 15px;
+    font-size: 63px;
+}
+
+/* ICONS */
+
+.icon-sound,
+.icon-plus,
+.icon-hamburger {
+    display: inline-block;
+    opacity: .95;
+    transition: opacity .15s;
+}
+
+.icon-sound:hover,
+.icon-plus:hover,
+.icon-hamburger:hover {
+    opacity: 1;
+}
+
+.icon-sound {
+    width: 33px;
+    height: 28px;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAcCAYAAADvANYcAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAARpJREFUeNrclzEOgjAUhsG44gaDk94C1GOog/Euxjt4BB1wticgXkNnN5wd6k9SY/N4RKylGF7yDbTk8ZU2r60vpfTajp73B2FDIgQpyIwzFNPxA3Nwk+8wymP68RCkshzOJPTR38HapQQd/RmMVZ8TCX30D7AFfa3fikQm68UVTJlEViTqxAEMKhJxEgE4gZh5P1Z9ASfhGY6Se0eotpyIxKpNKpFGJRLtY7l6jpm2RiU4kZKACwkqUhIo+IsNrPPTwS3MxPXCFBVrQBcR3xarvUGxEnQRaiKCFqu6ZfsCJk2V7U8syQa2aWIDq0MEjmQrH7mWeLEgh5pVW8c7+ldakeD+irGEb+HyE4EdGIKZSQIbEt24gT0FGABXMtyfMqTzqQAAAABJRU5ErkJggg==') no-repeat center center;
+
+}
+
+.icon-hamburger {
+    display: inline-block;
+    position: relative;
+    width: 34px;
+    height: 33px;
+}
+
+.icon-hamburger > span {
+    display: block;
+    position: absolute;
+    top: 18px;
+    left: 3px;
+    right: 3px;
+    height: 2px;
+    background: #fff;
+    transition: background 0s .3s;
+}
+
+.icon-hamburger > span::after,
+.icon-hamburger > span::before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transition-duration: .3s, .3s, .3s;
+    transition-delay: .3s, 0s, .3s;
+}
+
+.icon-hamburger > span::before {
+    top: -8px;
+    transition-property: top, transform, background-color;
+}
+
+.icon-hamburger > span::after {
+    bottom: -8px;
+    transition-property: bottom, transform, background-color;
+}
+
+.icon-hamburger.opened > span {
+    background: 0 0;
+}
+
+.icon-hamburger.opened > span::after,
+.icon-hamburger.opened > span::before {
+    background-color: #1D1E2A;
+    transition-delay: 0s, .3s, .3s;
+}
+
+.icon-hamburger.opened > span::before {
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.icon-hamburger.opened > span::after {
+    bottom: 0;
+    transform: rotate(-45deg);
+}
+
+.icon-plus {
+    width: 28px;
+    height: 28px;
+    position: relative;
+}
+
+.icon-plus::after,
+.icon-plus::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: #fff;
+}
+
+.icon-plus::before {
+    top: 50%;
+    margin-top: -1px;
+    height: 2px;
+    width: 100%;
+    left: 0;
+}
+
+.icon-plus::after {
+    left: 50%;
+    margin-left: -1px;
+    width: 2px;
+    height: 100%;
+    top: 0;
+}
+
+/* ------------------------------------------ */
 
 .container {
     bottom: 0;
@@ -22,14 +241,6 @@ body {
     top: 45px;
     width: 100%;
     z-index: 2;
-}
-
-
-#currentTime {
-    display: inline;
-    vertical-align: middle;
-    font-size: 28px;
-    color: #FFF;
 }
 
 #container.announcing .customTitle {
@@ -44,17 +255,9 @@ body {
     color: yellow;
 }
 
-.primary {
-    font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
-    vertical-align: middle;
-    clear: both;
-}
-
 .bgStatus {
     float: right;
-    text-align: center;
     white-space: nowrap;
-    padding-right: 20px;
 }
 
 .urgent .bgButton {
@@ -70,8 +273,6 @@ body {
 }
 
 .bgStatus .currentBG {
-    font-size: 120px;
-    line-height: 100px;
     text-decoration: line-through;
     vertical-align: middle;
 }
@@ -83,16 +284,23 @@ body {
 .bgStatus .pill.direction {
     font-weight: normal;
     text-decoration: none;
-    font-size: 90px;
-    line-height: 90px;
-    vertical-align: middle;
     border: none;
     background: none;
+    margin: 0;
+    padding: 0;
+    font-size: 49px;
 }
 
 .bgStatus .majorPills {
-    font-size: 30px;
-    line-height: 34px;
+    color: #71717F;
+    padding-top: 10px;
+    font-size: 26px;
+    text-align: right;
+}
+
+.bgStatus .majorPills em{
+    font-style: normal;
+    margin-right: 6px;
 }
 
 .minorPills {
@@ -108,32 +316,6 @@ body {
 
 .minorPills > span:not(:first-child) {
     margin-left: 5px;
-}
-
-.pill {
-    white-space: nowrap;
-    border-radius: 5px;
-    border: 2px solid #808080;
-    background: #808080;
-    display: inline-block;
-    margin-bottom: 4px;
-    padding: 2px 0;
-}
-
-.pill em, .pill label {
-    padding: 2px;
-    white-space: nowrap;
-}
-
-.pill em {
-    font-style: normal;
-    font-weight: bold;
-    background: #000;
-    border-radius: 3px;
-}
-
-.pill label {
-    color: #000;
 }
 
 .container .pill.warn em {
@@ -168,32 +350,8 @@ body {
     text-decoration: line-through;
 }
 
-.status {
-    color: #808080;
-    font-size: 100px;
-}
-
-.statusBox {
-    text-align: center;
-    width: 250px;
-}
-
-.statusPills {
-    font-size: 20px;
-    line-height: 23px;
-}
-
 .loading .statusPills {
     display: none;
-}
-
-.statusPills .pill {
-    background: #808080;
-    border-color: #808080;
-}
-
-.statusPills .pill em {
-    color: #bdbdbd;
 }
 
 #chartContainer {
@@ -202,11 +360,11 @@ body {
     bottom: 0;
     height: auto;
     font-size: 20px;
-    background: #111;
     display: block;
     position: absolute;
     margin: 2px;
     overflow: hidden;
+    padding: 0 30px 30px 40px;
 }
 
 #chartContainer svg {
@@ -214,23 +372,15 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
+    fill: #71717F;
 }
 
 #silenceBtn {
     z-index: 99;
-    border-radius: 5px;
-    border: 2px solid #bdbdbd;
 }
 
 #silenceBtn a {
-    font-size: 40px
-}
-
-.bgButton {
-    margin: 10px;
-    border: 2px solid #000;
-    border-radius: 5px;
-    width: 360px;
+    font-size: 20px
 }
 
 .loading .pill.rawbg {
@@ -260,24 +410,15 @@ body {
 }
 
 .alarming .bgButton {
-    border-color: #bdbdbd;
-    color: #000;
-    box-shadow: 2px 2px 0 #ddd;
+
 }
 
 .alarming.urgent .bgButton {
-    background-color: red;
+    background-color: #ff2236;
 }
 
 .alarming.warning .bgButton {
-    background-color: yellow;
-}
-
-.alarming .bgButton:active {
-    border: 2px solid #bdbdbd;
-    box-shadow: none;
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
+    background-color: #ffe321;
 }
 
 .button {
@@ -292,8 +433,8 @@ body {
     color: #444;
     position: absolute;
     text-align: left;
-    padding: 4px;
-    font-size: 14px;
+    padding: 10px;
+    font-size: 13px;
     line-height: 15px;
     background: white;
     border: 0;
@@ -311,27 +452,26 @@ body {
 }
 
 .focus-range {
+    display: inline-block;
     list-style: none;
-    margin: 4px;
     padding: 0;
-    color: #808080;
-    width: 250px;
-    text-align: center;
 }
 
 .focus-range li {
     display: inline-block;
     font-size: 18px;
     white-space: nowrap;
-    border-radius: 5px;
-    border: 2px solid #000;
     cursor: pointer;
+    color: #71717F;
+    text-transform: uppercase;
+}
+.focus-range li + li{
+    margin-left: 10px;
 }
 
 .focus-range .selected {
-    border-color: #808080;
-    color: #000;
-    background: #808080;
+    border-bottom: 2px solid currentColor;
+    color: #00D8CC;
 }
 
 .pill.hidden {
@@ -496,13 +636,6 @@ body {
 
     .statusBox {
         width: auto;
-    }
-
-    #currentTime {
-        display: inline;
-        vertical-align: middle;
-        font-size: 28px;
-        color: #FFF;
     }
 
     .statusPills {
