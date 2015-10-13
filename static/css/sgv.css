@@ -26,3 +26,9 @@ body {
 .tooltip {
   pointer-events: none;
 }
+
+/* Down Chart Background */
+g.chartContainer g.x.brush rect.background {
+  fill: white;
+  visibility: visible !important;
+}
