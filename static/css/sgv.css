@@ -32,3 +32,17 @@ g.chartContainer g.x.brush rect.background {
   fill: white;
   visibility: visible !important;
 }
+
+/* Extent element */
+g.chartContainer g.x.brush rect.extent {
+  fill: rgba(0, 215, 204, 0.1);
+  stroke: #00d7cc;
+  stroke-opacity: 1;
+  fill-opacity: 1;
+}
+
+/* Extent After */
+rect.extent-after {
+  fill: rgba(0, 0, 0, 0.1);
+  fill-opacity: 1;
+}
