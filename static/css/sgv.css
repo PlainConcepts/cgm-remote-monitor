@@ -50,3 +50,8 @@ rect.extent-after {
 g.axis .domain {
   display: none;
 }
+
+/* Hide the top hour axis at the bottom chart */
+g.chartContainer > g:first-child > g.x.axis {
+  display: none;
+}

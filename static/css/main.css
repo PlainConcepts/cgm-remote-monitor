@@ -57,7 +57,7 @@ body {
 
 #drawerToggle {
     position: relative;
-    z-index: 2;
+    z-index: 101;
 }
 
 /* MENU */
@@ -67,7 +67,7 @@ body {
     width: 320px;
     top: 0;
     right: -3px;
-    z-index: 1;
+    z-index: 100;
     overflow-y: auto;
     background-color: #FFFFFF;
     font-size: 16px;
