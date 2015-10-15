@@ -578,10 +578,6 @@ body {
         font-size: 14px;
     }
 
-    #silenceBtn a {
-        font-size: 30px;
-    }
-
     #chartContainer {
         font-size: 14px;
     }
@@ -850,6 +846,7 @@ body {
   div.primary {
     position: relative;
     padding: 0 0 20px 0;
+    overflow: visible;
   }
   div.bgStatus {
     display: block;
