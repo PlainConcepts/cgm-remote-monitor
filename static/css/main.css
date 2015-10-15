@@ -47,7 +47,7 @@ body {
     display: inline-block;
     padding-top: 6px;
     height: 100%;
-    min-width: 200px; /*fix IE problem*/
+    min-width: 120px; /* fix IE problem */
     text-align: right;
 }
 
@@ -626,7 +626,7 @@ body {
     }
 }
 
-@media (max-width: 400px) {
+/*@media (max-width: 400px) {
     .primary {
         text-align: center;
         margin-bottom: 0;
@@ -701,7 +701,7 @@ body {
     .focus-range li {
         display: block;
     }
-}
+}*/
 
 @media (max-height: 700px) {
     #chartContainer {
@@ -735,7 +735,7 @@ body {
     }
 }
 
-@media (max-height: 480px) and (min-width: 400px) {
+/*@media (max-height: 480px) and (min-width: 400px) {
     .bgStatus .currentBG {
         font-size: 70px;
         line-height: 60px;
@@ -770,7 +770,7 @@ body {
         line-height: 17px;
     }
 
-}
+}*/
 
 @media (max-height: 480px) and (max-width: 400px) {
 
