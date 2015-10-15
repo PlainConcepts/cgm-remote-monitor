@@ -832,3 +832,68 @@ body {
         line-height: 13px;
     }
 }
+
+@media (max-width: 570px) {
+  #toolbar {
+    position: relative;
+  }
+  #buttonbar {
+    position: absolute;
+    top: 1px;
+    right: 20px;
+  }
+  div.primary {
+    position: relative;
+    padding: 0 0 20px 0;
+  }
+  div.bgStatus {
+    display: block;
+    float: none;
+    margin: auto;
+    width: 100%;
+  }
+  div.bgButton {
+    width: 100%;
+    border: none;
+    text-align: center;
+    height: 65px;
+  }
+  div.bgButton span.currentBG {
+    font-size: 60px;
+    vertical-align: top;
+  }
+  div.majorPills {
+    margin-top: -35px;
+    padding-right: 15px;
+  }
+  div.majorPills span {
+    color: white;
+    font-size: 1.2em;
+    line-height: 0.8em;
+  }
+  div.status,
+  div.statusBox,
+  #lastEntry {
+    width: 100%;
+  }
+  #lastEntry {
+    border-width: 2px 0;
+    text-align: center;
+  }
+  ul.focus-range {
+    display: table;
+    width: 100%;
+    padding-top: 4px;
+    position: relative;
+    z-index: 10;
+  }
+  ul.focus-range li {
+    display: table-cell;
+    text-align: center;
+    font-size: 18px;
+  }
+  div#chartContainer {
+    padding-top: 20px;
+    padding-bottom: 0;
+  }
+}
