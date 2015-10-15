@@ -159,8 +159,13 @@ body {
 .icon-sound {
     width: 33px;
     height: 28px;
-    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAcCAYAAADvANYcAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAARpJREFUeNrclzEOgjAUhsG44gaDk94C1GOog/Euxjt4BB1wticgXkNnN5wd6k9SY/N4RKylGF7yDbTk8ZU2r60vpfTajp73B2FDIgQpyIwzFNPxA3Nwk+8wymP68RCkshzOJPTR38HapQQd/RmMVZ8TCX30D7AFfa3fikQm68UVTJlEViTqxAEMKhJxEgE4gZh5P1Z9ASfhGY6Se0eotpyIxKpNKpFGJRLtY7l6jpm2RiU4kZKACwkqUhIo+IsNrPPTwS3MxPXCFBVrQBcR3xarvUGxEnQRaiKCFqu6ZfsCJk2V7U8syQa2aWIDq0MEjmQrH7mWeLEgh5pVW8c7+ldakeD+irGEb+HyE4EdGIKZSQIbEt24gT0FGABXMtyfMqTzqQAAAABJRU5ErkJggg==') no-repeat center center;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAYCAMAAAA1ddazAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAA8FBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8AAADla+TzAAAATnRSTlMAFanDVOl7SPFcRvMnxSEBqMoD+4EEOj0M4WPfO/AmWtulDrC5AuA/DedFiIl6oMIt3BvoB/gG+TB/oRDqpLHe5SRYVjYWqiCny1UoScRAK80qAAAAAWJLR0QAiAUdSAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAPhJREFUKM+FkntXQUEUxTcq4upGpSKRd0oPlRB59KTs7/9xmitz3Muaa/81s37rnDNz9ga8CgRD8NHWNmmmgSC55Dvh9eLIrvAoY9ZqcXwPwu19JpKe4oPDIyx46hg4OWUaCFErc+aQObci2XMgx7wNwRcFCE8WWQLKFVb1PBn7f6hdsg5c8drA0eANUOetid/xHmjywcQf+QS0+GziBYX8eHtD/w67fu976TGq/7dQ372fV8ZtlDNqP8v9DlLCm8PeCBg7+9V6U/50xB/rXfsj+vhU/n65/P3mxOWv0lTlIyc8zNjPSoCcFq58/a4ncOqbz3mLmef+B4HUQJ1jv8NuAAAAAElFTkSuQmCC');
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
+.icon-sound.icon-sound-mute {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAYCAMAAAA1ddazAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAbFBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8AAAA+8cZEAAAAInRSTlMAFanDVOnxXMUh+4EE3zulDg20OTi18KTeOlZ/FqogVVrEGYIaWQAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAACtSURBVCjPhZLZEsIgDEXT1t26QAF3q/n/jzRkBFslMQ8MmXOTgZsAjKOqG1BiMkWUaVUjKpyKZ3ORx+LFEiROxat1Cz+8wRSbbcy/eca7PWRubBfvzpqkz2V88RhI4ALaMu8CCfgocxYwFngUMJa4i9yJ/N3fwZ/3Oe1/JPAffw5Dfzz703kz8Pd4Kvmb4kzzubQyh+uN5nsHZT962o+Htl+xhca5hcqpxXOUvwCauBoIe54nrgAAAABJRU5ErkJggg==');
 }
 
 .icon-hamburger {
