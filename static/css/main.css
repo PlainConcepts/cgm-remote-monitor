@@ -120,11 +120,15 @@ body {
 #lastEntry {
     display: inline-block;
     padding: 15px 10px;
-    background: #FF1770;
+    background: #00D7CC;
     border: 2px solid #FFF;
     color: #FFF;
     font-size: 32px;
     text-transform: uppercase;
+}
+
+#lastEntry.lastentry-alert {
+  background: #FF1770;
 }
 
 #lastEntry em {
