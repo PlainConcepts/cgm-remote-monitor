@@ -834,7 +834,7 @@ body {
     }
 }
 
-@media (max-width: 570px) {
+@media (max-width: 800px) {
   #toolbar {
     position: relative;
   }
