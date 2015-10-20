@@ -479,6 +479,7 @@ body {
     box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
     width: auto;
     white-space: nowrap;
+    z-index: 102;
 }
 
 .tooltip:after {
